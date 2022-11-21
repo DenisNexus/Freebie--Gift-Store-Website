@@ -1,4 +1,4 @@
-# Freebie--Gift-Store-Website
+# Freebie-Gift-Store-Website
 
 Landing .Mobile version of the site .
 
