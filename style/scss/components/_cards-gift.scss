@@ -1,0 +1,80 @@
+.cards-gift {
+    &__wrapper {
+        max-width: 1230px;
+        margin: 0 auto;
+        padding: 0 30px 137px 30px;
+        }
+
+        &__title {
+            padding-top: 96px;
+        }
+
+        &__subtitle {
+            padding: 23px 0 64px;
+        }
+
+        &__row {
+            @include space-between;
+
+            flex-wrap: wrap;
+        }
+
+        @media screen and (max-width: $breakpoint-lg){
+            &__title {
+                padding-top: 60px;
+            }
+            &__row {
+                justify-content: center;
+            }
+            &__column{
+                margin: 30px 30px 0 0 ;
+            }
+        }
+        @media screen and (max-width: $breakpoint-md){
+            &__subtitle {
+                padding-bottom: 44px;
+            }
+            &__wrapper{
+                padding-bottom: 80px;
+            }
+        }
+        @media screen and (max-width: $breakpoint-ms) {
+            &__column{
+                margin: 30px 0 0 0 ;
+            }
+        }
+    }
+
+.item-cards {
+
+    &__pic {
+            width: 100%;
+        }
+    &__info{
+            height: 166px;
+            padding: 24px;
+            
+            @include space-between;
+            flex-direction: column;
+        }
+
+    &__title {
+            font-size: $fs-20;
+            line-height: 24px;
+        }
+
+    &__link {
+            font-size: $fs-14;
+            line-height: 19px;
+            
+            &:hover{
+                @include link-hover;
+            }
+        }
+    }
+    .cards-gift__column:hover{
+        background-color: $color-wild-sand;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+        transform: scale(1.03);
+        transition: 0.3s;
+    }

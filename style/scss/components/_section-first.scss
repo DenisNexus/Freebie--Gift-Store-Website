@@ -1,0 +1,151 @@
+.section-first {
+    display: flex;
+    flex-direction: column;
+    background: $color-gray;
+}
+
+.gift {
+    @include space-between;
+    padding-top: 116px;
+
+    @media screen and (max-width: $breakpoint-md){
+        padding-top: 80px;
+    }
+    
+    @media screen and (max-width: $breakpoint-sm){
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    &__info {
+        margin: 154px 0 0 162px;
+        max-width: 413px;
+        height: 411px;
+        }
+        
+    &__title {   
+        font-size: $fs-56;
+        line-height: 69px;
+        font-weight: $fw-semiBold;
+        }
+    
+    &__image{
+        max-height: 700px;
+    }
+    
+    @media screen and (max-width: $breakpoint-lg){
+            &__info {
+            margin: 80px 60px 0 20px;
+            max-width: 413px;
+            height: 360px;
+            }
+
+            &__title {
+            font-size: $fs-40;
+            line-height: 50px;
+            } 
+    }
+    @media screen and (max-width: $breakpoint-md){
+        &__info{
+            margin: 60px 60px 0 50px;
+            max-width: 270px;
+            height: 250px;
+        }
+        &__title{
+            font-size: $fs-32;
+            line-height: 40px;
+        }
+    }
+    
+    @media screen and (max-width: $breakpoint-sm){
+        &__info{
+            @include center;
+
+            max-width: 320px;
+            height: 370px;
+            padding: 32px 0 ;
+            margin: 0 auto;
+        }
+    }
+
+    }
+
+.work {
+    @include space-between;
+
+    @media screen and (max-width: $breakpoint-sm){
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__info {
+        margin: 164px 166px 0 0;
+        max-width: 441px;
+        height: 332px;
+        }
+
+    &__title {
+        font-size: $fs-32;
+        line-height: 140.62%;
+        }
+
+    &__image{
+        max-height: 600px;
+        }
+     
+    @media screen and (max-width: $breakpoint-lg){
+        
+            &__info {
+                margin: 60px 70px 0 20px;
+                max-width: 441px;
+                height: 332px;
+            }
+            &__title {
+                font-size: $fs-30;
+                line-height: 140.62%;
+                }
+        }
+
+    @media screen and (max-width: $breakpoint-md){
+
+            &__info{
+                margin: 20px 60px 0 30px;
+                max-width: 300px;
+                height: 320px;
+                } 
+            }
+
+    @media screen and (max-width: $breakpoint-sm){
+        
+            &__info{
+                @include center;
+
+                order: 1;
+                margin: 0 auto;
+                padding: 20px 0;
+                height: 360px;  
+                }
+            &__image{
+                order: 2;
+            }
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text {
+    font-size: $fs-20;
+    line-height: 140.62%;
+
+    @media screen and (max-width:$breakpoint-md) {
+        font-size: $fs-16;
+        line-height: 140.62%;
+    }
+}
+

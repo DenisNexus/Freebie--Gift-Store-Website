@@ -1,0 +1,206 @@
+.blog{
+
+    &__wrapper {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        padding-top: 80px;
+
+        @media screen and (max-width: $breakpoint-sm){
+
+            &{
+                padding-top: 60px;
+            } 
+        }
+    }
+
+    &__subtitle {
+        padding: 23px 0 71px 0 ;
+
+        @media screen and (max-width: $breakpoint-sm){
+
+            &{
+                padding: 23px 20px 50px 20px ;
+            } 
+        }
+    }
+}
+.article {
+
+    padding-right: 30px;
+    height: 370px;
+    background: $color-black-article;
+    
+    @include grig (400px 490px);
+    grid-column-gap: 78px;
+
+
+    @media screen and (max-width: $breakpoint-md){
+
+        &{
+            
+            height: auto;
+            grid-template-columns:  300px 390px;
+            grid-column-gap: 30px;
+        } 
+    }
+
+    @media screen and (max-width: $breakpoint-sm){
+
+        &{
+            height: auto;
+            grid-template-columns:1fr;
+            padding: 0;
+        } 
+    }
+
+    &__name {
+        font-size: $fs-14;
+        line-height: 140.62%;
+        color: $white;
+
+        padding-top: 64px;
+
+        @media screen and (max-width: $breakpoint-md){
+
+            &{
+                padding-top: 30px;
+            } 
+        }
+    }
+    &__text {
+        font-size: $fs-48;
+        line-height: 58px;
+        color: $white;
+
+        padding: 27px 0 60px 0;
+
+        @media screen and (max-width: $breakpoint-md){
+
+            &{
+                font-size: $fs-30;
+                padding: 15px 0 40px 0;
+            } 
+        }
+
+        @media screen and (max-width: $breakpoint-sm){
+
+            &{
+                font-size: $fs-30;
+                padding: 10px 0 30px 0;
+            } 
+        }
+    }   
+    &__link {
+        font-size: $fs-18;
+        line-height: 140.62%;
+        color: $white;
+
+        padding-bottom: 49px;
+
+        &:hover{
+            @include link-hover;
+        }
+    }
+
+    &__img{
+        @media screen and (max-width: $breakpoint-sm){
+
+            &{
+                justify-self: center;
+            } 
+    }
+}
+    &__info{
+        @media screen and (max-width: $breakpoint-sm){
+
+            &{
+                justify-self: center;
+                padding: 0 20px;
+            } 
+    }
+    }
+}
+.blog__row {
+    padding: 40px 0 80px 0;
+
+    @include grig (1fr 1fr);
+    grid-column-gap: 30px;
+
+    @media screen and (max-width: $breakpoint-lg){
+
+        &{
+            padding: 40px 30px 80px 30px;
+        } 
+    }
+
+    @media screen and (max-width: $breakpoint-sm){
+
+        &{
+            grid-template-columns: 1fr;
+        } 
+    }
+}
+
+.blog__column{
+
+    @media screen and (max-width: $breakpoint-sm){
+
+        &{
+            padding-bottom: 30px;
+        } 
+    }
+}
+
+.card {
+        height: 290px;
+        padding: 48px;
+
+        display: grid;
+        grid-template-rows: auto auto auto;
+
+
+        &:hover{
+            background-color: $color-wild-sand;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+            transform: scale(1.03);
+            transition: 0.3s;
+            }
+
+        @media screen and (max-width: $breakpoint-md){
+                &{  
+                    height: auto;
+                    padding: 38px;
+                } 
+            }
+            
+        @media screen and (max-width: $breakpoint-sm){
+                &{  
+                    height: auto;
+                    padding: 30px;
+                } 
+            }
+
+    &__title {
+        max-width: 474px;
+        font-size: $fs-24;
+        line-height: 140.62%;
+        font-weight: $fw-Bold;
+    }
+    &__text {
+        font-size: $fs-18;
+        line-height: 140.62%;
+        padding: 16px 0;
+    }
+    &__link {
+        font-size: $fs-14;
+        line-height: 140.62%;
+        align-items: end;
+
+        &:hover{
+            @include link-hover;
+        }
+    }
+}

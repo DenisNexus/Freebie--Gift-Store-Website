@@ -1,0 +1,133 @@
+.btn{
+    cursor: pointer;
+    font-size: $fs-18;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 5px;
+
+    @media screen and (max-width: $breakpoint-sm){
+        font-size: $fs-16;
+    }
+}
+
+.header__btn{
+    @include border(1px, $orange);
+
+    width: 150px;
+    height: 42px;
+    color: $orange;
+    
+    &:hover{
+        background: $orange;
+        color: $white;
+        transition: 0.8s;
+    }
+
+    @media screen and (max-width: $breakpoint-sm){
+        width: 150px;
+        height: 35px;
+        display: none;
+    }
+
+    &-burger{
+        @include border(1px, $orange);
+        width: 150px;
+        height: 35px;
+        color: $orange;
+    }
+}
+
+.gift__btn{
+    width: 200px;
+    height: 60px;
+    background: $orange;
+    color: $white;
+    margin-bottom: 10px;
+
+    &:hover{
+        @include border(1px, $orange);
+
+        color: $orange;
+        background: $white;
+        transition: 0.8s;
+    }
+
+    @media screen and (max-width: $breakpoint-md){
+
+        &{
+            @include btn-sm;
+        } 
+        }
+}
+
+.work__btn{
+    @include border(1px, $orange);
+
+    width: 200px;
+    height: 60px;
+    color: $orange;
+    margin-bottom: 10px;
+
+    &:hover{
+        background: $orange;
+        color: $white;
+        transition: 0.8s;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    @media screen and (max-width: $breakpoint-md){
+
+        &{
+            @include btn-sm;
+        } 
+}
+}
+
+.contact-form__button{
+    @include btn;
+    @include border(1px, $color-black);
+
+    &:hover{
+        color: $white;
+        background: $color-black;
+        transition: 0.8s;
+    }
+
+    @media screen and (max-width: $breakpoint-md){
+
+        &{
+            @include btn-sm;
+        } 
+        }
+}
+
+.contact-form__button-active{
+    @include btn;
+
+    margin-right:12px ;
+    color: $white;
+    background: $color-black;
+
+    &:hover{
+        @include border(1px, $color-black);
+        
+        color: $color-black;
+        background: $orange;
+        transition: 0.8s;
+    }
+
+    @media screen and (max-width: $breakpoint-md){
+
+        &{
+            @include btn-sm;
+            } 
+        }
+
+    @media screen and (max-width: $breakpoint-md){
+
+        &{
+            margin-right:8px ;
+            } 
+        }
+}

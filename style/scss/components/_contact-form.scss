@@ -1,0 +1,58 @@
+.contact-form {
+    background: $orange;
+
+    &__wrapper {
+        margin: 0 auto;
+        padding: 0 30px ;
+        max-width: 1030px;
+        height: 240px;
+
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+
+        @media screen and (max-width: $breakpoint-md){
+
+            &{    
+                grid-template-columns: 1fr;
+                justify-items: center;
+                } 
+        }
+    }
+    &__titile {
+        font-size: $fs-32;
+        line-height: 140.62%;
+        font-weight: $fw-Bold;
+
+        @media screen and (max-width: $breakpoint-sm){
+
+            &{
+                font-size: $fs-30;
+            } 
+        }
+
+    }
+    &__subtitile {
+        font-size: $fs-32;
+        line-height: 140.62%;
+
+        @media screen and (max-width: $breakpoint-sm){
+
+            &{
+                font-size: $fs-24;
+                text-align: center;
+            } 
+        }
+    }
+    
+    &__buttons{
+        justify-self: end;
+        @media screen and (max-width: $breakpoint-md){
+
+            &{
+                justify-self: center;
+            } 
+        }
+    }
+
+}

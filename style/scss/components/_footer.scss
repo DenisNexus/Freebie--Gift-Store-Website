@@ -1,0 +1,125 @@
+.footer {
+    background: $color-wild-sand;
+
+    &__wrapper {
+        margin: 0 auto;
+        max-width: 1000px;
+        height: 410px;
+    }
+
+    &__text {
+       text-align: center;
+    }
+
+    @media screen and (max-width: $breakpoint-lg){
+
+        &__wrapper{
+            max-width: 800px;
+        } 
+    }
+
+    @media screen and (max-width: $breakpoint-md){
+
+        &__wrapper{
+            max-width: 600px;
+        } 
+    }
+    @media screen and (max-width: $breakpoint-sm){
+
+        &__wrapper{
+            max-width: 350px;
+        } 
+    }
+}
+
+.social-links {
+    text-align: center;
+    align-items: center;
+    padding: 55px 0 75px 0;
+
+    &__link{
+        padding-right: 25px;
+
+        &:last-child{
+            padding-right: 0;
+        }
+        
+        & svg:hover{
+            opacity: 0.7;
+            transition: 0.2s;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm){
+
+        &{
+            &__link{
+                padding-right: 20px;
+            } 
+        }
+    }    
+}
+.menu-footer {
+    border-bottom: 1px solid $color-black;
+
+    &__container {
+        max-width: 614px;
+        margin: 0 auto;
+    
+        padding: 106px 0 43px 0;
+        @include space-between;
+        align-items: center;
+        text-align: center;
+    }
+    
+    &__list {
+        display: flex;
+    }
+    &__item {
+        padding-right: 60px;
+
+        &:last-child{
+            padding-right: 0;
+        }
+    }
+    &__link {
+        font-weight: $fw-Bold;
+        font-size: 14px;
+        line-height: 140.62%;
+
+        &:hover{
+            @include link-hover;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-md){
+
+        &__container{
+            max-width: 500px;
+            padding: 120px 30px 40px 30px;
+        } 
+    }
+
+    @media screen and (max-width: $breakpoint-sm){
+
+        &__logo{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm){
+
+        &__item{
+            padding-right: 40px;
+        } 
+    }
+
+}
+
+.mylink{
+    font-weight: $fw-Bold;
+    &:hover{
+        @include link-hover;
+    }
+}
+

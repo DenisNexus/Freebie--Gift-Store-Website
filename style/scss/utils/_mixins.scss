@@ -1,0 +1,39 @@
+@mixin border ($height, $color) {
+    border: $height solid $color;
+}
+
+@mixin grig ($columns){
+    display:grid;
+    grid-template-columns:$columns;
+}
+
+@mixin flex ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin center {
+    text-align: center;
+    align-items: center;
+}
+
+@mixin btn{
+    width: 200px;
+    height: 50px;
+}
+
+@mixin btn-sm{
+    width: 150px;
+    height: 40px;
+}
+
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin link-hover{
+    color: $orange;
+    transition: 0.2s;
+}

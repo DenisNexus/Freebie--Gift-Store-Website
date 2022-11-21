@@ -1,0 +1,43 @@
+@font-face{
+    font-family: Gilroy;
+    src: url(./scss/font/Gilroy-Semibold.ttf);
+    src: url(./scss/font/Gilroy-Bold.ttf);
+    src: url(./scss/font/Gilroy-Regular.ttf);
+  }
+
+html{
+    scroll-behavior: smooth
+}
+
+body{
+    font-family: "Gilroy" ,sans-serif;
+}
+
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.title{
+    text-align: center;
+    font-size: $fs-32;
+    line-height: 38px;
+
+    @media screen and (max-width: $breakpoint-lg){
+        & {
+            font-size: $fs-30;
+            line-height: 32px;
+        }
+    }
+}
+
+.subtitle{
+    text-align: center;
+    font-size: $fs-18;
+    line-height: 135.94%;
+
+    @media screen and (max-width: $breakpoint-lg){
+        & {
+            font-size: $fs-16;
+        }
+    }
+}
